@@ -1,0 +1,35 @@
+@media (min-width: 481px) {
+  .bottom-bar {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .bottom-bar {
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 3px -2px black;
+  }
+
+  .bottom-bar-action {
+    /* float: left; */
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .bottom-bar-action:active {
+    background-color: #ddd;
+    color: black;
+    /* transition: 0.2s; */
+  }
+}
